@@ -6,11 +6,13 @@ import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { FlightsService } from './flights.service';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
   declarations: [ AppComponent,  HomeComponent, AdminComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [FlightsService]
 })
 export class AppModule { }
